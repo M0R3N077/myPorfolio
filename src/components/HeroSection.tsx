@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import FindMe from './FindMe';
+import Button from './ui/Button';
+import Radio from './ui/Radio';
 
 const HeroSection = () => {
   const fullText = "Hey, my name is Murilo Moreno, also known as just Moreno";
@@ -32,12 +35,20 @@ const HeroSection = () => {
   }, [subIndex, index]);
 
   return (
-    <div className='bg-main min-h-screen flex justify-center items-start flex-col'>
-      <div className='flex justify-center items-center flex-col mb-5 max-w-2xl text-left gap-1.5 ml-14'>
+    <>
+    <div className='bg-main min-h-screen flex justify-center items-center flex-col gap-10'>
+      <div className="flex  gap-40">
+      <div className='flex justify-center items-center flex-col mb-5 max-w-2xl text-left gap-1.5 ml-7'>
         <h1 className='text-6xl text-white font-extrabold'>{text}<span className="animate-pulse">|</span></h1>
-        <h2 className='text-3xl text-purple-500 font-bold'>{subText}</h2>
+        <h2 className='text-border text-3xl text-purple-800 font-bold '>{subText}</h2>
+        <Radio />
       </div>
+    <FindMe />
     </div>
+   
+    </div>
+    
+      </>
   );
 };
 

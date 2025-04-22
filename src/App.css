@@ -1,6 +1,29 @@
 .bg-main{
-  background-image: url(./assets/7Tez.gif);
+  /* background-image: url(./assets/7Tez.gif); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background: linear-gradient(135deg, #6e00d5, #042666, #255154);
+  background-size: 300% 300%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; } /* Posição inicial */
+  25% { background-position: 50% 50%; } /* Posição intermediária */
+  50% { background-position: 100% 50%; } /* Posição centralizada */
+  75% { background-position: 50% 50%; } /* Outra posição intermediária */
+  100% { background-position: 0% 50%; } /* Volta à posição inicial */
+}
+
+.text-border{
+  text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
+}
+
+.bg-default{
+  background-color: #00000000;
 }
