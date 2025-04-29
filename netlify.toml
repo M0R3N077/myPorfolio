@@ -1,0 +1,4 @@
+[build]
+  base = "myPortfolio"
+  publish = "myPortfolio/dist" # ou "build", depende do seu setup
+  command = "npm install && npm run build && npm install framer-motion lucide-react @headlessui/react"
