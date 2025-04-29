@@ -35,20 +35,26 @@ const HeroSection = () => {
   }, [subIndex, index]);
 
   return (
-    <>
-    <div className='bg-main min-h-screen flex justify-center items-center flex-col gap-10'>
-      <div className="flex  gap-40">
-      <div className='flex justify-center items-center flex-col mb-5 max-w-2xl text-left gap-1.5 ml-7'>
-        <h1 className='text-6xl text-white font-extrabold'>{text}<span className="animate-pulse">|</span></h1>
-        <h2 className='text-border text-3xl text-purple-800 font-bold '>{subText}</h2>
-        <Radio />
+    <div className='min-h-screen flex flex-col justify-center items-center gap-10 px-6 md:px-12 '>
+      <div className="flex justify-center flex-col-reverse md:flex-row gap-10 md:gap-40 items-center w-full">
+        
+        {/* Texto */}
+        <div className='flex flex-col items-start text-left gap-4 max-w-2xl'>
+          <h1 className='text-4xl md:text-5xl lg:text-6xl text-white font-extrabold'>
+            {text}
+            <span className="animate-pulse ">|</span>
+          </h1>
+          <h2 className='text-2xl md:text-3xl text-purple-800 font-bold text-border'>
+            {subText}
+          </h2>
+          <Radio />
+        </div>
+
+        {/* FindMe */}
+        <FindMe />
+        
       </div>
-    <FindMe />
     </div>
-   
-    </div>
-    
-      </>
   );
 };
 

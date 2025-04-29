@@ -1,13 +1,26 @@
+import Awards from '../components/Awards'
+import Certifications from '../components/Certifications'
+import Experience from '../components/Experience'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
-import Button from '../components/ui/Button'
+import ProfilePage from '../components/ProfileSection'
+import ProjectsSection from '../components/ProjectsSection'
+import SkillsSection from '../components/SkillsSection'
 
 const Index = () => {
   return (
     <>
-    <div className="gap-20">
+    <div className="bg-main gap-20">
     <Header />
         <HeroSection/>
+        <ProfilePage />
+        <SkillsSection />
+        <ProjectsSection />
+        <Experience />
+        <Certifications />
+        <Awards />
+        <Footer />
         </div>
     </>
   )

@@ -34,7 +34,7 @@ const ProjectSlider: React.FC = () => {
   }, []);
 
   return (
-    <div className="bottom-0 right-0 transform  w-[400px] bg-gray-900 pb-3 rounded-r-md shadow-lg z-50 ease-in-out hover:scale-105">
+    <div className="bottom-0 right-0 transform  w-[250px] bg-gray-900 pb-3 rounded-r-md shadow-lg z-50 ease-in-out hover:scale-105">
       <a
         href={projects[current].url}
         target="_blank"
