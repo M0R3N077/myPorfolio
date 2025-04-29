@@ -27,8 +27,8 @@ const timelineData: TimelineItem[] = [
 
 const Experience: React.FC = () => {
   return (
-    <section className="relative  py-20 px-6 text-white flex flex-col items-center">
-      <h2 className="text-5xl font-bold mb-16 text-center">My Journey</h2>
+    <section className="relative  py-20 px-6 text-white flex flex-col items-center" id="experience">
+      <h2 className="text-6xl font-bold mb-16 text-center"> JOURNEY</h2>
       <div className="relative max-w-5xl w-full">
         {/* Vertical Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-purple-500 via-indigo-500 to-blue-500"></div>

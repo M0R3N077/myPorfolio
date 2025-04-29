@@ -4,15 +4,15 @@ import me from "../assets/me.jpeg";
 
 const ProfilePage: React.FC = () => {
   return (
-    <div className="min-h-screen  font-sans pt-8">
+    <div className="min-h-screen  font-sans pt-8" id='about-me'>
       {/* Header */}
       <header className="flex items-start justify-start px-8 pt-6">
         {/* Menu Icon */}
 
         {/* Title */}
         <div className="text-start ml-4">
-          <h2 className="text-6xl font-bold tracking-tight">ABOUT ME</h2>
-          <h3 className="text-3xl tracking-widest mt-1">EFFORT + DEDICATION</h3>
+          <h2 className="text-6xl font-bold tracking-tight text-white">ABOUT ME</h2>
+          <h3 className="text-3xl tracking-widest mt-1 text-white">EFFORT + DEDICATION</h3>
         </div>
 
         {/* Espaço para equilibrar o header */}

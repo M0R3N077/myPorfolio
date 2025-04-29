@@ -70,9 +70,9 @@ const ProjectsSection: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section className="min-h-screen text-white py-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+    <section className="min-h-screen text-white py-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center" id='projects'>
       {/* Título */}
-      <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12 text-center">PROJECTS</h2>
+      <h2 className="text-6xl sm:text-5xl lg:text-6xl font-bold mb-12 text-center">PROJECTS</h2>
 
       {/* Botões de categoria */}
       <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-12">

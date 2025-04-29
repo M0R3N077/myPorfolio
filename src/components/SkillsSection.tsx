@@ -26,9 +26,9 @@ const languages = [
 
 const SkillsSection: React.FC = () => {
   return (
-    <section className="min-h-screen text-white flex flex-col items-center py-8 px-8 relative">
+    <section className="min-h-screen text-white flex flex-col items-center py-8 px-8 relative" id='skills'>
       {/* Title */}
-      <h2 className="text-6xl mb-16 text-center text-black font-bold">
+      <h2 className="text-6xl mb-16 text-center font-bold">
         SKILLS
       </h2>
 

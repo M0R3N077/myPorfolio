@@ -7,17 +7,17 @@ import projectPetShop from "../assets/projects/project-petShop.png";
 
 const projects: Project[] = [
   {
-    title: "Site Gamificado de Romantismo",
+    title: "Gamified website",
     image: projectGame,
     url: "https://github.com/seuusuario/projeto1",
   },
   {
-    title: "Site de Formatura para Sala",
+    title: "Graduation website for class",
     image: projectClass,
     url: "https://github.com/seuusuario/projeto2",
   },
   {
-    title: "Site para Petshop",
+    title: "Petshop",
     image: projectPetShop,
     url: "https://github.com/seuusuario/projeto3",
   },

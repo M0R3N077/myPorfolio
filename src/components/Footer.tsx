@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
               <Linkedin size={18} className="text-purple-500" />
-              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              <a href="https://www.linkedin.com/in/murilomorenof/" target="_blank" rel="noopener noreferrer" className="hover:underline">
                 LinkedIn
               </a>
             </li>
             <li className="flex items-center gap-2">
               <Github size={18} className="text-purple-500" />
-              <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              <a href="https://github.com/M0R3N077  " target="_blank" rel="noopener noreferrer" className="hover:underline">
                 GitHub
               </a>
             </li>

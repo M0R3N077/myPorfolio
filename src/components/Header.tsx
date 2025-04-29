@@ -11,12 +11,12 @@ const Header = () => {
 
         {/* Menu só aparece a partir do md */}
         <ul className="hidden md:flex gap-6 text-white text-[20px] items-center">
-          <li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">About Me</li>
-          <li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Skills</li>
-          <li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Projects</li>
-          <li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Experience</li>
-          <li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Certificates</li>
-          <li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Awards</li>
+          <a href="#about-me"><li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">About Me</li></a>
+          <a href="#skills"><li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Skills</li></a>
+          <a href="#projects"><li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Projects</li></a>
+          <a href="#experience"><li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Experience</li></a>
+          <a href="#certifications"><li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Certificates</li></a>
+          <a href="#awards"><li className="cursor-pointer hover:bg-purple-800 px-6 py-2 rounded-2xl hover:scale-105 transition-transform">Awards</li></a>
         </ul>
       </div>
     </header>
