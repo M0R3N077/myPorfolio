@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, Download, Globe } from "lucide-react";
+import { Mail, Linkedin, Github, Download, Globe } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (

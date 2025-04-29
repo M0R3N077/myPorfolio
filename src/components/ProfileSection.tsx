@@ -1,6 +1,5 @@
 import React from 'react';
 import myImage from "../assets/minha_imagem.jpeg";
-import me from "../assets/me.jpeg";
 
 const ProfilePage: React.FC = () => {
   return (

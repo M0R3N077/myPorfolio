@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import FindMe from './FindMe';
-import Button from './ui/Button';
 import Radio from './ui/Radio';
 
 const HeroSection = () => {
