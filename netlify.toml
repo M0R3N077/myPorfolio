@@ -1,4 +1,3 @@
 [build]
-  base = "myPortfolio"
-  publish = "myPortfolio/dist"
-  command = "npm install && npm run build"
+  publish = "dist"
+  command = "npm run build"
