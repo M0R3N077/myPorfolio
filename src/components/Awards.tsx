@@ -19,21 +19,21 @@ const awards: Award[] = [
   {
     title: "Certificate of Excellence 1st Semester - Senai Technical Course",
     description: "Due to my excellent academic performance and full attendance during the first semester of the Senai Systems Development course, I was rewarded with a certificate of excellence.",
-    image: "/awards/hackathon-champion.png",
+    image: "https://www.oanhanguera.com.br/arquivos_personalizados/uploads/noticias/fotos/Fachada_Senai_60e70f7b90d7a.JPG",
   },
   {
     title: "Silver Medal - National Open Olympiad in Brazilian History (ONHB-A)",
     description: "In 2022, during the Open National Brazilian History Olympiad, my group and I managed, with all the support of the teaching staff at SESI Sorocaba school, to win the ONHB silver medal.",
-    image: "/awards/top-student.png",
+    image: "https://cdn.prod.website-files.com/60ff690cd7b0537edb99a29a/62fbf8886bda347e864eb60a_declarac%CC%A7a%CC%83o%20de%20independecia%20do%20Brasil.jpg",
   },
   {
     title: "Best Writing",
     description: "In 2023, the SESI Sorocaba school required students to write an argumentative essay on the theme T'he stigma associated with mental illness in Brazilian society'. On this occasion, I was awarded the trophy for best essay.",
-    image: "/awards/top-student.png",
+    image: "https://jornaldacidadegv.com.br/wp-content/uploads/2025/01/Folha-de-Redacao-Enem-2-scaled-1.webp",
   }, {
     title: "Gloria Maria Award - Best Report",
     description: "In 2023, together with my group from the SESI Sorocaba school, we won the award for best report written, our theme in question was 'Environmental Racism', and I performed the role of reporter.",
-    image: "/awards/top-student.png",
+    image: "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/56d2/live/bc7f94d0-a312-11ed-8f65-71bfa0525ce3.jpg.webp",
   },
   // Add more awards here
 ];

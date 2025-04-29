@@ -4,6 +4,7 @@ import { Dialog } from '@headlessui/react';
 import projectGame from "../assets/projects/romantismo-game.png";
 import projectClass from "../assets/projects/class.png";
 import projectPetShop from "../assets/projects/project-petShop.png";
+import correctText from "../assets/projects/correct.png";
 
 
 interface Project {
@@ -31,7 +32,7 @@ const projects = {
       title: 'Petshop',
       image: projectPetShop,
       tech: ['/skills/react.svg', '/skills/tailwindcss.svg', '/skills/typescript.svg'],
-      site: 'https://portfolio.com',
+      site: 'https://pet-heave.netlify.app/',
       github: 'https://github.com/M0R3N077/prjPetshopWBack',
       description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
     },
@@ -55,8 +56,8 @@ const projects = {
   ],
   Fullstack: [
     {
-      title: 'Sistema de Vendas',
-      image: '/projects/sistema.png',
+      title: 'Corret Text',
+      image: correctText,
       tech: ['/skills/react.svg', '/skills/nodejs.svg', '/skills/sql.svg'],
       site: 'https://sistemadevendas.com',
       github: 'https://github.com/usuario/sistema-vendas',

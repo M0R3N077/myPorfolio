@@ -2,7 +2,7 @@ import logo from "../assets/moreno_logo .png";
 
 const Header = () => {
   return (
-    <header className="fixed z-50 top-0 left-0 w-screen bg-transparent h-32 flex items-center">
+    <header className="fixed z-50 top-0 left-0 w-screen bg-transparent h-32 flex items-center pt-2.5">
       <div className="flex w-full justify-between items-center px-6">
         {/* Logo sempre visível */}
         <div className="flex justify-center w-full md:w-auto">
