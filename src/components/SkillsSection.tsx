@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import gif from '../assets/Programming123najra.gif';
 
 const hardSkills = [
   { name: 'HTML5', logo: 'https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw' },
@@ -36,89 +35,59 @@ const softSkills = [
 
 const SkillsSection: React.FC = () => {
   return (
-    <section className="min-h-screen text-white flex flex-col items-center py-12 px-6 " id="skills">
-      <motion.h2
-        className="text-5xl font-bold mb-12 text-center text-white tracking-wider"
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        MY SKILLS
-      </motion.h2>
-
-      <div className="grid lg:grid-cols-2 gap-16 w-full max-w-7xl items-center">
-        {/* Left Side: GIF */}
-        <motion.div
-          className="flex justify-center"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+    <section className="min-h-screen px-6 py-20  text-white">
+      <div className="max-w-6xl mx-auto">
+        <motion.h2 
+          className="text-6xl font-bold mb-12 text-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
-          <img src={gif} alt="Coding GIF" className="rounded-xl w-full max-w-md shadow-lg shadow-purple-700/50" />
-        </motion.div>
+          MY SKILLS
+        </motion.h2>
 
-        {/* Right Side: Skills Grid */}
-        <motion.div
-          className="flex flex-col gap-8"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          {/* Hard Skills */}
-          <div>
-            <h3 className="text-2xl font-semibold text-purple-400 mb-4">Hard Skills</h3>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-              {hardSkills.map((skill) => (
-                <div key={skill.name} className="flex flex-col items-center">
-                  <img src={skill.logo} alt={skill.name} className="w-12 h-12 object-contain" />
-                  <span className="text-sm mt-2">{skill.name}</span>
-                </div>
+        <div className="flex flex-col md:flex-row items-center justify-center text-center md:items-start gap-12">
+          <div className="flex-1">
+            <h3 className="text-2xl font-semibold mb-6 text-purple-400">HARD SKILLS</h3>
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-9">
+              {hardSkills.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  className="bg-[#1e1e2f] p-4 rounded-xl shadow-md hover:shadow-purple-500/40 transition-shadow flex flex-col items-center justify-center"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <img src={skill.logo} alt={skill.name} className="h-12 w-12 mb-2" />
+                  <span className="text-sm text-center">{skill.name}</span>
+                </motion.div>
               ))}
             </div>
-          </div>
 
-          {/* Languages */}
-          <div>
-            <h3 className="text-2xl font-semibold text-purple-400 mb-4">Languages</h3>
-            <div className="flex flex-wrap gap-6">
-              {languages.map((lang) => (
-                <div key={lang.name} className="flex items-center gap-3">
-                  <img src={lang.flag} alt={lang.name} className="w-8 h-5 object-cover rounded" />
+            <h3 className="text-2xl font-semibold mt-12 mb-4 text-purple-400">SOFT SKILLS</h3>
+            <ul className="grid grid-cols-2 md:grid-cols-3 gap-7 ">
+              {softSkills.map((skill, index) => (
+                <li key={index} className="bg-[#292a3e] px-4 py-3 rounded-full text-center text-1xl  shadow-md hover:shadow-purple-500/40 transition-shadow">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="text-2xl font-semibold mt-12 mb-4 text-purple-400">LANGUAGES</h3>
+            <div className="flex flex-wrap gap-4 justify-center items-center">
+              {languages.map((lang, index) => (
+                <div key={index} className="flex items-center text-center justify-center gap-3 bg-[#292a3e] px-4 py-3 rounded-xl border border-purple-600 min-w-60">
+                  <img src={lang.flag} alt={lang.name} className="h-8 w-10 rounded-sm" />
                   <div>
-                    <p className="font-medium">{lang.name}</p>
-                    <p className="text-sm text-gray-400">{lang.level}</p>
+                    <p className="text-[20px] font-semibold">{lang.name}</p>
+                    <p className="text-[15px] text-gray-300">{lang.level}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Soft Skills */}
-          <div>
-            <h3 className="text-2xl font-semibold text-purple-400 mb-4">Soft Skills</h3>
-            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 list-disc list-inside text-sm text-gray-300">
-              {softSkills.map((skill, idx) => (
-                <li key={idx}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default SkillsSection;
-
-
-
-
-
-
-
-
-
-
-
-
-

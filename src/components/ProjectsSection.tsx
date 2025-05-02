@@ -5,6 +5,7 @@ import projectGame from "../assets/projects/romantismo-game.png";
 import projectClass from "../assets/projects/class.png";
 import projectPetShop from "../assets/projects/project-petShop.png";
 import correctText from "../assets/projects/correct.png";
+import { style } from 'framer-motion/client';
 
 
 interface Project {
@@ -23,7 +24,10 @@ const projects = {
     {
       title: 'Graduation website for class',
       image: projectClass,
-      tech: ['/skills/react.svg', '/skills/tailwindcss.svg', '/skills/typescript.svg'],
+      tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
+          'https://imgs.search.brave.com/mer7TJf5AUZ6eObxi989K06gOrZ8l0AyfXPOfmmK5r8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L1Nhc3NfTG9n/b19Db2xvci5zdmc',
+          'https://imgs.search.brave.com/1dSdxU2GDlGcxnbNSj_iU83ak0hLBbK9e5btboQV8gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk5L1Vub2ZmaWNp/YWxfSmF2YVNjcmlw/dF9sb2dvXzIuc3Zn',
+        ],
       site: 'https://formatura-3e.netlify.app/',
       github: 'https://github.com/M0R3N077/prjSiteSala',
       description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
@@ -31,7 +35,10 @@ const projects = {
     {
       title: 'Petshop',
       image: projectPetShop,
-      tech: ['/skills/react.svg', '/skills/tailwindcss.svg', '/skills/typescript.svg'],
+      tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
+          'https://imgs.search.brave.com/mer7TJf5AUZ6eObxi989K06gOrZ8l0AyfXPOfmmK5r8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L1Nhc3NfTG9n/b19Db2xvci5zdmc',
+          'https://imgs.search.brave.com/1dSdxU2GDlGcxnbNSj_iU83ak0hLBbK9e5btboQV8gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk5L1Vub2ZmaWNp/YWxfSmF2YVNjcmlw/dF9sb2dvXzIuc3Zn',
+        'https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256'],
       site: 'https://pet-heave.netlify.app/',
       github: 'https://github.com/M0R3N077/prjPetshopWBack',
       description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
@@ -39,7 +46,9 @@ const projects = {
     {
       title: 'Gamified website',
       image: projectGame,
-      tech: ['/skills/react.svg', '/skills/tailwindcss.svg', '/skills/typescript.svg'],
+      tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
+          'https://imgs.search.brave.com/mer7TJf5AUZ6eObxi989K06gOrZ8l0AyfXPOfmmK5r8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L1Nhc3NfTG9n/b19Db2xvci5zdmc',
+          'https://imgs.search.brave.com/1dSdxU2GDlGcxnbNSj_iU83ak0hLBbK9e5btboQV8gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk5L1Vub2ZmaWNp/YWxfSmF2YVNjcmlw/dF9sb2dvXzIuc3Zn',],
       site: 'https://interativo-romantismo.netlify.app/',
       github: 'https://github.com/M0R3N077/romantismoProject',
       description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
@@ -47,10 +56,65 @@ const projects = {
   ],
   Backend: [
     {
-      title: 'API de Tarefas',
-      image: '/projects/api.png',
-      tech: ['/skills/nodejs.svg', '/skills/express.svg', '/skills/sql.svg'],
-      github: 'https://github.com/usuario/api-tarefas',
+      title: 'Pet shop management system API',
+      image: 'https://storage.needpix.com/rsynced_images/animals-2173635_1280.jpg',
+      tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw'],
+      github: 'https://github.com/M0R3N077/prjMuriloMorenoSomativa1',
+      description: 'Uma API REST para gerenciamento de tarefas utilizando Node.js, Express e banco de dados SQL.',
+    },
+    {
+      title: 'Contributor API',
+      image: 'https://blog.samisaude.com.br/wp-content/uploads/2022/03/feedback-e-saude-no-trabalho.jpg',
+      tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw'],
+      github: 'https://github.com/M0R3N077/prjCadColaboradores',
+      description: 'Uma API REST para gerenciamento de tarefas utilizando Node.js, Express e banco de dados SQL.',
+    },
+    {
+      title: 'Vendor API',
+      image: 'https://glpadvocacia.com.br/wp-content/uploads/2021/07/25-11.jpg',
+      tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw'],
+      github: 'https://github.com/M0R3N077/prjVendorAPI',
+      description: 'Uma API REST para gerenciamento de tarefas utilizando Node.js, Express e banco de dados SQL.',
+    },
+    {
+      title: 'Drug API',
+      image: 'https://ictq.com.br/images/Serializa%C3%A7%C3%A3o_de_medicamentos_exigir%C3%A1_mudan%C3%A7as_em_todo_o_setor_farmac%C3%AAutico.jpg',
+      tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw'],
+      github: 'https://github.com/M0R3N077/prjFarmacia',
+      description: 'Uma API REST para gerenciamento de tarefas utilizando Node.js, Express e banco de dados SQL.',
+    },
+    {
+      title: 'Pharmacy API',
+      image: 'https://live.staticflickr.com/5830/23468781025_6ef7687054_b.jpg',
+      tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw',
+        'https://www.svgrepo.com/show/439233/mysql.svg',
+      ],
+      github: 'https://github.com/M0R3N077/prjSpringFarmacia',
+      description: 'Uma API REST para gerenciamento de tarefas utilizando Node.js, Express e banco de dados SQL.',
+    },
+    {
+      title: 'Company API',
+      image: 'https://images.jota.info/wp-content/uploads/2022/07/o-que-e-cvm-e-como-funciona-scaled-1-scaled.jpg',
+      tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw',
+        'https://www.svgrepo.com/show/439233/mysql.svg',
+      ],
+      github: 'https://github.com/M0R3N077/prjSpringEmpresa',
+      description: 'Uma API REST para gerenciamento de tarefas utilizando Node.js, Express e banco de dados SQL.',
+    },
+    {
+      title: 'School API',
+      image: 'https://sintep.org.br/sintep/admin/uploads/noticias/16597107832022-08-05-site-chico-bezerra-jaboatao-guararapes.jpg',
+      tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw',
+      ],
+      github: 'https://github.com/M0R3N077/prjSchool',
+      description: 'Uma API REST para gerenciamento de tarefas utilizando Node.js, Express e banco de dados SQL.',
+    },
+    {
+      title: 'Employee API',
+      image: 'https://cliniqueomicron.ca/wp-content/uploads/2024/10/5647689.png-930x620.webp',
+      tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw',
+      ],
+      github: 'https://github.com/M0R3N077/prjSondagem',
       description: 'Uma API REST para gerenciamento de tarefas utilizando Node.js, Express e banco de dados SQL.',
     },
   ],
@@ -58,7 +122,13 @@ const projects = {
     {
       title: 'Corret Text',
       image: correctText,
-      tech: ['/skills/react.svg', '/skills/nodejs.svg', '/skills/sql.svg'],
+      tech: ['https://imgs.search.brave.com/-wRYfmc8MFTE9dYoFBioZSxfu45QaJyuKfJ3h68gZGM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG40/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvbG9nb3MtMy82/MDAvUmVhY3QuanNf/bG9nby01MTIucG5n',
+         'https://imgs.search.brave.com/3EeDSn_qoSVIvgjAoi3s6DN5NycGE2G8t4uSMTO2NIE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yYXcu/Z2l0aHVidXNlcmNv/bnRlbnQuY29tL2dl/dC1pY29uL2dldGlj/b24vbWFzdGVyL2lj/b25zL3RhaWx3aW5k/Y3NzLWljb24uc3Zn',
+          'https://imgs.search.brave.com/b1mza9u8ePJdo9VHfx00bmjzGwVI_b7cLPA1ONSjIL0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy80/LzRjL1R5cGVzY3Jp/cHRfbG9nb18yMDIw/LnN2Zw',
+        'https://imgs.search.brave.com/va692JH018MJaLTBGo1ElcX59bzFmJo7-DsH9B5TlfI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9weXRob24tNS5z/dmc',
+      'https://imgs.search.brave.com/NVZxcNW8dtnRNm7DwJqdUceHPg1J4isHZFcDLq6uKZE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9ub2RlLWpz/LWljb24tOTA5eDEw/MjQtaWc0Z205azcu/cG5n',
+    'https://imgs.search.brave.com/xrlC1uXtSPUvNS04cqCkzQIpEovjb82W_vItjxceu4w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3VheWVyZC5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDQvZXhwcmVzc2pz/LWxvZ28uc3Zn',
+  'https://www.svgrepo.com/show/331488/mongodb.svg'],
       site: 'https://sistemadevendas.com',
       github: 'https://github.com/usuario/sistema-vendas',
       description: 'Um sistema de vendas completo, com frontend em React e backend em Node.js.',
@@ -105,7 +175,14 @@ const ProjectsSection: React.FC = () => {
               alt={project.title}
               className="w-full h-32 sm:h-40 object-cover rounded-2xl mb-4"
             />
-            <h3 className="text-xl sm:text-2xl font-bold text-center">{project.title}</h3>
+          <h3 className="text-xl sm:text-2xl font-bold text-center">{project.title}</h3>
+
+<div className="flex flex-wrap justify-center items-center gap-2 mt-2">
+  {project.tech.map((logo, idx) => (
+    <img key={idx} src={logo} alt="Tech logo" className="w-6 h-6 sm:w-7 sm:h-7" />
+  ))}
+</div>
+
            
 
             {/* Botões */}
