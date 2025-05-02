@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import second from "../assets/awards/2-semester.jpg";
+import first from "../assets/awards/1semestre.jpeg";
 
 interface Award {
   title: string;
@@ -19,7 +20,7 @@ const awards: Award[] = [
   {
     title: "Certificate of Excellence 1st Semester - Senai Technical Course",
     description: "Due to my excellent academic performance and full attendance during the first semester of the Senai Systems Development course, I was rewarded with a certificate of excellence.",
-    image: "https://www.oanhanguera.com.br/arquivos_personalizados/uploads/noticias/fotos/Fachada_Senai_60e70f7b90d7a.JPG",
+    image: first,
   },
   {
     title: "Silver Medal - National Open Olympiad in Brazilian History (ONHB-A)",

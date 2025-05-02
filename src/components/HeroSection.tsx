@@ -1,6 +1,29 @@
 import { useEffect, useState } from 'react';
 import FindMe from './FindMe';
 import Radio from './ui/Radio';
+import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
+
+
+
+const fromLeft: Variants = {
+  hidden: { opacity: 0, x: -500 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 4.2, ease: 'easeOut', delay: 2.3 }
+  }
+};
+
+const fromRight: Variants = {
+  hidden: { opacity: 0, x: 700 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 4.2, ease: 'easeOut', delay: 2.3 }
+  }
+};
+
 
 const HeroSection = () => {
   const fullText = "Hey, my name is Murilo Moreno, also known as just Moreno";
@@ -11,7 +34,7 @@ const HeroSection = () => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
 
-  // Efeito para o título principal
+
   useEffect(() => {
     if (index < fullText.length) {
       const timeout = setTimeout(() => {
@@ -21,8 +44,7 @@ const HeroSection = () => {
       return () => clearTimeout(timeout);
     }
   }, [index]);
-
-  // Efeito para o subtítulo (só começa após o título estar completo)
+  
   useEffect(() => {
     if (index === fullText.length && subIndex < fullSubText.length) {
       const timeout = setTimeout(() => {
@@ -32,9 +54,12 @@ const HeroSection = () => {
       return () => clearTimeout(timeout);
     }
   }, [subIndex, index]);
+      
+
+  
 
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center gap-10 px-6 md:px-12 '>
+    <div className='min-h-screen flex flex-col justify-start items-center gap-10 px-6 md:px-12 overflow-hidden'>
       <div className="flex justify-center flex-col-reverse md:flex-row gap-10 md:gap-40 items-center w-full">
         
         {/* Texto */}
@@ -43,18 +68,38 @@ const HeroSection = () => {
             {text}
             <span className="animate-pulse ">|</span>
           </h1>
-          <h2 className='text-2xl md:text-3xl text-purple-800 font-bold text-border'>
+          <h2 className='text-2xl md:text-3xl text-purple-600 font-bold text-border'>
             {subText}
           </h2>
-          <Radio />
-        </div>
+       
+            <motion.div
+  variants={fromLeft}
+  initial="hidden"
+  animate="visible"
+>
+  <Radio />
+</motion.div>
 
-        {/* FindMe */}
-        <FindMe />
+
+
+    
+        </div>
+        
+ <motion.div
+ variants={fromRight}
+ initial="hidden"
+ animate="visible"
+>
+ <FindMe />
+</motion.div>
+
+
+
         
       </div>
     </div>
   );
 };
+
 
 export default HeroSection;

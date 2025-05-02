@@ -11,7 +11,7 @@ import SkillsSection from '../components/SkillsSection'
 const Index = () => {
   return (
     <>
-    <div className="bg-main gap-20">
+    <div className="bg-main font-['Poppins'] overflow-hidden">
     <Header />
         <HeroSection/>
         <ProfilePage />

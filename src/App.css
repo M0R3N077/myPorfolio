@@ -1,19 +1,34 @@
-.bg-main{
-  /* background-image: url(./assets/7Tez.gif); */
-  background-position: center;
-  background-size: cover;
+.bg-main {
+  background: linear-gradient(
+    -145deg,
+    #21000f,
+    #000f2b,
+    #320038,
+    #000000,
+    #0b0c38
+  );
+  background-size: 400% 400%;
+  animation: technoGradient 15s ease-in-out infinite;
   background-repeat: no-repeat;
-  background: linear-gradient(135deg, #6e00d5, #042666, #255154);
-  background-size: 300% 300%;
-  animation: gradient 10s ease infinite;
+  background-attachment: fixed; /* fixa o background no scroll */
 }
-
-@keyframes gradient {
-  0% { background-position: 0% 50%; } /* Posição inicial */
-  25% { background-position: 50% 50%; } /* Posição intermediária */
-  50% { background-position: 100% 50%; } /* Posição centralizada */
-  75% { background-position: 50% 50%; } /* Outra posição intermediária */
-  100% { background-position: 0% 50%; } /* Volta à posição inicial */
+  
+@keyframes technoGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .text-border{
@@ -27,3 +42,4 @@
 .bg-default{
   background-color: #00000000;
 }
+

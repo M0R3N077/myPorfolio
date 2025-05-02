@@ -2,11 +2,11 @@ import logo from "../assets/moreno_logo .png";
 
 const Header = () => {
   return (
-    <header className="fixed z-50 top-0 left-0 w-screen bg-transparent h-32 flex items-center pt-2.5">
-      <div className="flex w-full justify-between items-center px-6">
+    <header className="z-50 top-0 left-0 w-screen bg-transparent flex items-center pt-1 px-6">
+      <div className="flex w-full justify-between items-center px-9">
         {/* Logo sempre visível */}
         <div className="flex justify-center w-full md:w-auto">
-          <img className="w-32 md:w-40 mt-6" src={logo} alt="Moreno Logo" />
+          <img className="w-24 md:w-33" src={logo} alt="Moreno Logo" />
         </div>
 
         {/* Menu só aparece a partir do md */}

@@ -7,17 +7,17 @@ import projectPetShop from "../assets/projects/project-petShop.png";
 
 const projects: Project[] = [
   {
-    title: "Gamified website",
+    title: "Gamified Website",
     image: projectGame,
     url: "https://github.com/seuusuario/projeto1",
   },
   {
-    title: "Graduation website for class",
+    title: "Graduation Website",
     image: projectClass,
     url: "https://github.com/seuusuario/projeto2",
   },
   {
-    title: "Petshop",
+    title: "Petshop Website",
     image: projectPetShop,
     url: "https://github.com/seuusuario/projeto3",
   },
@@ -29,12 +29,12 @@ const ProjectSlider: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % projects.length);
-    }, 5000); // 3 segundos por slide
+    }, 5000); 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="bottom-0 right-0 transform  w-[250px] bg-gray-900 pb-3 rounded-r-md shadow-lg z-50 ease-in-out hover:scale-105">
+    <div className="transform  w-[200px] bg-gray-900 pb-1 rounded-md shadow-lg z-50 ease-in-out hover:scale-105"  style={{boxShadow: '5px 6px 9px #9810fa'}}>
       <a
         href={projects[current].url}
         target="_blank"
@@ -46,7 +46,7 @@ const ProjectSlider: React.FC = () => {
           alt={projects[current].title}
           className="w-full h-full object-cover rounded"
         />
-        <h3 className="text-white mt-2 text-center font-semibold text-1xl">
+        <h3 className="text-white mt-1 text-center font-semibold text-1xl">
           {projects[current].title}
         </h3>
       </a>

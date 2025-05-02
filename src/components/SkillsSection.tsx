@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import gif from "../assets/Programming123najra.gif";
+import gif from '../assets/Programming123najra.gif';
 
-const skills = [
+const hardSkills = [
   { name: 'HTML5', logo: 'https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw' },
   { name: 'CSS3', logo: 'https://imgs.search.brave.com/kTKvDjFg8uSx56pZHmcFxgYwJRkOlbH6oHO9WSe8TFA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL0NTUzNfbG9n/by5zdmc' },
   { name: 'JavaScript', logo: 'https://imgs.search.brave.com/1dSdxU2GDlGcxnbNSj_iU83ak0hLBbK9e5btboQV8gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk5L1Vub2ZmaWNp/YWxfSmF2YVNjcmlw/dF9sb2dvXzIuc3Zn' },
@@ -24,75 +24,101 @@ const languages = [
   { name: 'English', level: 'Advanced', flag: 'https://imgs.search.brave.com/MyyoRmNgSfd1syh8vS2Hz_YWKKO6Xes-bwSWY8wywgg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29tcHJhcmJhbmRl/cmFzLmVzL2ltYWdl/cy9iYW5kZXJhcy80/MDAvNjEtZXN0YWRv/cy11bmlkb3NfNDAw/cHguanBn' },
 ];
 
+const softSkills = [
+  'Teamwork',
+  'Communication',
+  'Problem-solving',
+  'Leadership',
+  'Critical thinking',
+  'Organization',
+  'Empathy',
+];
+
 const SkillsSection: React.FC = () => {
   return (
-    <section className="min-h-screen text-white flex flex-col items-center py-8 px-8 relative" id='skills'>
-      {/* Title */}
-      <h2 className="text-6xl mb-16 text-center font-bold">
-        SKILLS
-      </h2>
+    <section className="min-h-screen text-white flex flex-col items-center py-12 px-6 " id="skills">
+      <motion.h2
+        className="text-5xl font-bold mb-12 text-center text-white tracking-wider"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        MY SKILLS
+      </motion.h2>
 
-      {/* Introduction and Skills Grid Side-by-Side */}
-      <div className="flex flex-col md:flex-row w-full max-w-6xl mb-14 gap-16">
-        {/* Text on Left */}
-        <div className="flex-1 flex flex-col justify-center items-center gap-14">
-          <p className="text-lg text-white mb-6 leading-relaxed">
-            I'm a passionate developer specialized in building modern, responsive web and mobile applications. 
-            My expertise spans across frontend and backend technologies. I love turning complex problems into simple, 
-            beautiful and intuitive designs. Constant learning and improvement are part of my journey as a developer.
-            <br/><br/>
-            Technologies I'm most confident with include React, TypeScript, TailwindCSS, Node.js, Spring Boot, and more.
-          </p>
-          <img 
-            src={gif} 
-            alt="Coding Animation" 
-            className="w-56 h-56 object-cover bg-no-repeat bg-center rounded-full  hidden md:block mt-8 mb-8"
-          />
-            {/* Languages Section */}
-      <div className="w-full max-w-4xl mb-24">
-        <h3 className="text-3xl font-semibold mb-10 text-center tracking-wide">
-          Languages
-        </h3>
-        <div className="flex flex-wrap justify-center gap-12">
-          {languages.map((language, index) => (
-            <motion.div
-              key={index}
-              className="flex flex-col items-center min-w-[200px] gap-3 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 shadow-lg hover:from-purple-500 hover:to-indigo-500 transition-all"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <img src={language.flag} alt={language.name} className="w-16 h-16 rounded-full shadow-md" />
-              <p className="text-xl font-bold">{language.name}</p>
-              <p className="text-gray-300 text-sm">{language.level}</p>
-            </motion.div>
-          ))}
-        </div>
+      <div className="grid lg:grid-cols-2 gap-16 w-full max-w-7xl items-center">
+        {/* Left Side: GIF */}
+        <motion.div
+          className="flex justify-center"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <img src={gif} alt="Coding GIF" className="rounded-xl w-full max-w-md shadow-lg shadow-purple-700/50" />
+        </motion.div>
+
+        {/* Right Side: Skills Grid */}
+        <motion.div
+          className="flex flex-col gap-8"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          {/* Hard Skills */}
+          <div>
+            <h3 className="text-2xl font-semibold text-purple-400 mb-4">Hard Skills</h3>
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+              {hardSkills.map((skill) => (
+                <div key={skill.name} className="flex flex-col items-center">
+                  <img src={skill.logo} alt={skill.name} className="w-12 h-12 object-contain" />
+                  <span className="text-sm mt-2">{skill.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Languages */}
+          <div>
+            <h3 className="text-2xl font-semibold text-purple-400 mb-4">Languages</h3>
+            <div className="flex flex-wrap gap-6">
+              {languages.map((lang) => (
+                <div key={lang.name} className="flex items-center gap-3">
+                  <img src={lang.flag} alt={lang.name} className="w-8 h-5 object-cover rounded" />
+                  <div>
+                    <p className="font-medium">{lang.name}</p>
+                    <p className="text-sm text-gray-400">{lang.level}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Soft Skills */}
+          <div>
+            <h3 className="text-2xl font-semibold text-purple-400 mb-4">Soft Skills</h3>
+            <ul className="grid grid-cols-2 sm:grid-cols-3 gap-3 list-disc list-inside text-sm text-gray-300">
+              {softSkills.map((skill, idx) => (
+                <li key={idx}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+        </motion.div>
       </div>
-        </div>
-
-        {/* Skills Grid on Right */}
-        <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 ">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="flex flex-col items-center gap-4 group"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <div className="w-24 h-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl flex items-center justify-center shadow-lg group-hover:from-purple-500 group-hover:to-indigo-500">
-                <img src={skill.logo} alt={skill.name} className="w-12 h-12" />
-              </div>
-              <p className="text-sm tracking-wide">{skill.name}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-    
     </section>
   );
 };
 
 export default SkillsSection;
+
+
+
+
+
+
+
+
+
+
+
+
+

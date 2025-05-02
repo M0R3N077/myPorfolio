@@ -57,7 +57,7 @@ const Certifications: React.FC = () => {
 
   return (
     <section className="relative py-20 px-8 text-white flex flex-col items-center" id="certifications">
-      <h2 className="text-6xl font-bold mb-16 text-center">CERTIFICATIONS</h2>
+      <h2 className="text-5xl font-bold mb-16 text-center">CERTIFICATIONS</h2>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl w-full">
         {certificates.slice(0, visibleCount).map((cert, index) => (
