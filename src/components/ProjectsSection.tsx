@@ -5,7 +5,8 @@ import projectGame from "../assets/projects/romantismo-game.png";
 import projectClass from "../assets/projects/class.png";
 import projectPetShop from "../assets/projects/project-petShop.png";
 import correctText from "../assets/projects/correct.png";
-import { style } from 'framer-motion/client';
+import freeFall from "../assets/projects/free_fall.png";
+import express from "../assets/projects/express.png";
 
 
 interface Project {
@@ -22,7 +23,7 @@ const categories = ['Frontend', 'Backend', 'Fullstack'];
 const projects = {
   Frontend: [
     {
-      title: 'Graduation website for class',
+      title: 'Graduation Website',
       image: projectClass,
       tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
           'https://imgs.search.brave.com/mer7TJf5AUZ6eObxi989K06gOrZ8l0AyfXPOfmmK5r8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L1Nhc3NfTG9n/b19Db2xvci5zdmc',
@@ -33,7 +34,7 @@ const projects = {
       description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
     },
     {
-      title: 'Petshop',
+      title: 'Petshop Website',
       image: projectPetShop,
       tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
           'https://imgs.search.brave.com/mer7TJf5AUZ6eObxi989K06gOrZ8l0AyfXPOfmmK5r8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L1Nhc3NfTG9n/b19Db2xvci5zdmc',
@@ -44,7 +45,7 @@ const projects = {
       description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
     },
     {
-      title: 'Gamified website',
+      title: 'Gamified Website',
       image: projectGame,
       tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
           'https://imgs.search.brave.com/mer7TJf5AUZ6eObxi989K06gOrZ8l0AyfXPOfmmK5r8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L1Nhc3NfTG9n/b19Db2xvci5zdmc',
@@ -53,6 +54,36 @@ const projects = {
       github: 'https://github.com/M0R3N077/romantismoProject',
       description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
     },
+    {
+      title: 'Free Fall Website',
+      image: freeFall,
+      tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
+          'https://imgs.search.brave.com/mer7TJf5AUZ6eObxi989K06gOrZ8l0AyfXPOfmmK5r8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L1Nhc3NfTG9n/b19Db2xvci5zdmc',
+          'https://imgs.search.brave.com/1dSdxU2GDlGcxnbNSj_iU83ak0hLBbK9e5btboQV8gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk5L1Vub2ZmaWNp/YWxfSmF2YVNjcmlw/dF9sb2dvXzIuc3Zn',],
+      site: 'https://fisica-com-toledo-queda-livre.netlify.app/',
+      github: 'https://github.com/M0R3N077/siteFisica',
+      description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
+    },
+    {
+      title: 'Express.js Website',
+      image: express,
+      tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
+          'https://imgs.search.brave.com/kTKvDjFg8uSx56pZHmcFxgYwJRkOlbH6oHO9WSe8TFA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL0NTUzNfbG9n/by5zdmc',
+          'https://imgs.search.brave.com/1dSdxU2GDlGcxnbNSj_iU83ak0hLBbK9e5btboQV8gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk5L1Vub2ZmaWNp/YWxfSmF2YVNjcmlw/dF9sb2dvXzIuc3Zn',],
+      site: 'https://express-em-node.netlify.app/',
+      github: 'https://github.com/M0R3N077/siteExpress',
+      description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
+    },
+    // {
+    //   title: 'Black Consciousness Website',
+    //   image: express,
+    //   tech: ['https://imgs.search.brave.com/eebNUPJ6ONPm56zyF1mPB-HqAIQsiLpwhmNrAsSaKdQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzM4L0hUTUw1X0Jh/ZGdlLnN2Zw',
+    //       'https://imgs.search.brave.com/kTKvDjFg8uSx56pZHmcFxgYwJRkOlbH6oHO9WSe8TFA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL0NTUzNfbG9n/by5zdmc',
+    //       'https://imgs.search.brave.com/1dSdxU2GDlGcxnbNSj_iU83ak0hLBbK9e5btboQV8gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk5L1Vub2ZmaWNp/YWxfSmF2YVNjcmlw/dF9sb2dvXzIuc3Zn',],
+    //   site: 'https://express-em-node.netlify.app/',
+    //   github: 'https://github.com/M0R3N077/site_novembro',
+    //   description: 'Um portfólio moderno feito com React, TypeScript e TailwindCSS.',
+    // },
   ],
   Backend: [
     {
@@ -111,7 +142,7 @@ const projects = {
     },
     {
       title: 'Employee API',
-      image: 'https://cliniqueomicron.ca/wp-content/uploads/2024/10/5647689.png-930x620.webp',
+      image: 'https://imgs.search.brave.com/FXhoes30wtjgtKqtPHFKJC0cVgQJfi2TjQPeT2-xha0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5LzgwLzY2Lzk5/LzM2MF9GXzk4MDY2/OTkzMV9XeUV3Rlpx/M0NCTTcyb0duMEJN/cThidDFoZW5OUmhs/cS5qcGc',
       tech: ['https://imgs.search.brave.com/PDsYeYpj9PoR7JEEwYnPSpBaWH5G9tPRYajJt4C-Yw4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/Lzc5L1NwcmluZ19C/b290LnN2Zw',
       ],
       github: 'https://github.com/M0R3N077/prjSondagem',
