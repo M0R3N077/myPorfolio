@@ -15,14 +15,14 @@ const fromLeft: Variants = {
   }
 };
 
-const fromRight: Variants = {
-  hidden: { opacity: 0, x: 700 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 4.2, ease: 'easeOut', delay: 2.3 }
-  }
-};
+// const fromRight: Variants = {
+//   hidden: { opacity: 0, x: 700 },
+//   visible: {
+//     opacity: 1,
+//     x: 0,
+//     transition: { duration: 4.2, ease: 'easeOut', delay: 2.3 }
+//   }
+// };
 
 
 const HeroSection = () => {

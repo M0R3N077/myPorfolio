@@ -3,7 +3,6 @@ import { Project } from "../types/project";
 import projectGame from "../assets/projects/romantismo-game.png";
 import projectClass from "../assets/projects/class.png";
 import projectPetShop from "../assets/projects/project-petShop.png";
-import { div } from "framer-motion/client";
 
 
 const projects: Project[] = [
