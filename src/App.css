@@ -43,3 +43,8 @@
   background-color: #00000000;
 }
 
+.some{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+  

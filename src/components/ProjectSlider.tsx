@@ -34,7 +34,7 @@ const ProjectSlider: React.FC = () => {
   }, []);
 
   return (
-    <div> 
+    <div className="z-[9999]"> 
     <div className="transform  w-[200px] bg-gray-900 pb-1 rounded-md shadow-lg z-50 ease-in-out hover:scale-105"  style={{boxShadow: '5px 6px 9px #9810fa'}}>
       <a
         href={projects[current].url}

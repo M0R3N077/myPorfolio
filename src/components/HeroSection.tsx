@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import Radio from './ui/Radio';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
+import ProjectSlider from './ProjectSlider';
+
 
 
 
@@ -14,15 +16,6 @@ const fromLeft: Variants = {
     transition: { duration: 4.2, ease: 'easeOut', delay: 2.3 }
   }
 };
-
-// const fromRight: Variants = {
-//   hidden: { opacity: 0, x: 700 },
-//   visible: {
-//     opacity: 1,
-//     x: 0,
-//     transition: { duration: 4.2, ease: 'easeOut', delay: 2.3 }
-//   }
-// };
 
 
 const HeroSection = () => {
@@ -78,7 +71,21 @@ const HeroSection = () => {
   animate="visible"
 >
   <Radio />
-  
+  <div className='flex justify-center mt-7 md:bottom-20 md:left-20'>
+    <a href="#about-me">
+    <div className='w-[35px] h-[64px] rounded-3xl border-3 border-white/90 flex justify-center p-2'>
+    <motion.div
+    animate={{y: [0, 24, 0]}}
+    transition={{
+      duration: 1.5,
+      repeat: Infinity,
+      repeatType: "loop"
+    }}
+    className='w-3 h-3 rounded-full bg-white/80 mb-1'
+    />
+    </div>
+    </a>
+  </div>
 </motion.div>
 
 
@@ -86,6 +93,17 @@ const HeroSection = () => {
     
         </div>
       </div>
+  
+        
+      <div className=' mt-6 md:absolute right-[60px] bottom-[60px] '>
+      <div className='md:w-full flex justify-center text-[18px]'>
+          <h3 className='hidden md:text-white md:block some absolute right-[203px] top-10 '>SOME</h3>
+          <h3 className='text-white tracking-[8px]'>PROJECTS</h3>
+
+        </div>
+        <ProjectSlider />
+      </div>
+ 
     </div>
   );
 };
