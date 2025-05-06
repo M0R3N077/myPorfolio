@@ -3,6 +3,7 @@ import { Project } from "../types/project";
 import projectGame from "../assets/projects/romantismo-game.png";
 import projectClass from "../assets/projects/class.png";
 import projectPetShop from "../assets/projects/project-petShop.png";
+import { div } from "framer-motion/client";
 
 
 const projects: Project[] = [
@@ -34,6 +35,7 @@ const ProjectSlider: React.FC = () => {
   }, []);
 
   return (
+    <div> 
     <div className="transform  w-[200px] bg-gray-900 pb-1 rounded-md shadow-lg z-50 ease-in-out hover:scale-105"  style={{boxShadow: '5px 6px 9px #9810fa'}}>
       <a
         href={projects[current].url}
@@ -50,6 +52,7 @@ const ProjectSlider: React.FC = () => {
           {projects[current].title}
         </h3>
       </a>
+    </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import FindMe from './FindMe';
+// import FindMe from './FindMe';
 import Radio from './ui/Radio';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
@@ -7,10 +7,10 @@ import type { Variants } from 'framer-motion';
 
 
 const fromLeft: Variants = {
-  hidden: { opacity: 0, x: -500 },
+  hidden: { opacity: 0, y: 500 },
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: { duration: 4.2, ease: 'easeOut', delay: 2.3 }
   }
 };
@@ -59,11 +59,11 @@ const HeroSection = () => {
   
 
   return (
-    <div className='min-h-screen flex flex-col justify-start items-center gap-10 px-6 md:px-12 overflow-hidden'>
+    <div className='min-h-screen flex flex-col justify-start items-center pt-12 px-6 md:px-12 overflow-hidden'>
       <div className="flex justify-center flex-col-reverse md:flex-row gap-10 md:gap-40 items-center w-full">
         
         {/* Texto */}
-        <div className='flex flex-col items-start text-left gap-4 max-w-2xl'>
+        <div className='flex flex-col items-center text-center gap-4 max-w-2xl'>
           <h1 className='text-4xl md:text-5xl lg:text-6xl text-white font-extrabold'>
             {text}
             <span className="animate-pulse ">|</span>
@@ -78,24 +78,13 @@ const HeroSection = () => {
   animate="visible"
 >
   <Radio />
+  
 </motion.div>
 
 
 
     
         </div>
-        
- <motion.div
- variants={fromRight}
- initial="hidden"
- animate="visible"
->
- <FindMe />
-</motion.div>
-
-
-
-        
       </div>
     </div>
   );

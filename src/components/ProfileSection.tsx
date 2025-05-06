@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import myImage from '../assets/minha_imagem.jpeg';
+import Image from '../assets/animationProgrammer.png';
 
 const ProfilePage: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ const ProfilePage: React.FC = () => {
           className="w-full max-w-md"
         >
           <img
-            src={myImage}
+            src={Image}
             alt="Murilo Moreno Portrait"
             className="rounded-2xl ring-8 ring-white"
             style={{ boxShadow: '4px 6px 20px #9810fa' }}

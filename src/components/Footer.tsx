@@ -15,8 +15,8 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex items-center gap-2">
               <Globe size={18} className="text-purple-500" />
-              <a href="https://yourportfolio.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                moreno-portfolio.netlify
+              <a href="https://morenoportifolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              https://morenoportifolio.netlify.app
               </a>
             </li>
           </ul>
